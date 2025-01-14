@@ -1,0 +1,33 @@
+#home-container {
+  background-image: url("../assets/images/home-bg-2.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  line-height: 70px;
+  margin-left: 160px;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  color: #425bb5;
+  margin-left: 40px;
+  font-weight: 700;
+  margin-left: 200px;
+}
+
+h4:before {
+  position: relative;
+  width: 30px;
+  left: -40px;
+  content: "";
+  display: block;
+  height: 2px;
+  background: #425bb5;
+  top: 9px;
+}

@@ -1,0 +1,15 @@
+nav ul {
+    text-align: center;
+}
+
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+nav li button {
+    all: unset;
+    cursor: pointer;
+}
