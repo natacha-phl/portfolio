@@ -1,0 +1,101 @@
+#projects-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  min-height: 100vh;
+}
+
+
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
+#projects-container .card {
+  position: relative;
+  margin: 0px 10px;
+  width: 28%;
+  border-radius: 0;
+  height: 220px;
+  overflow: hidden;
+}
+
+#projects-container .card a {
+  color: white;
+  font-weight: bolder;
+}
+
+#projects-container .card img {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  height: 100%; /* Prend toute la hauteur du conteneur */
+  object-fit: cover; /* Assure que l'image est contenue sans être déformée */
+  border-radius: 0; /* Retire tout arrondi éventuel sur l'image */
+  display: block;
+  object-position: center;
+}
+
+#projects-container .card button {
+  pointer-events: visible !important;
+}
+
+#projects-container .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(66, 91, 181, 0.8);
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+  border-radius: 0;
+}
+
+#projects-container .card:hover .card-overlay {
+  z-index: 1;
+}
+
+.card-overlay h5 {
+  width: 100%;
+  text-align: center;
+}
+
+.card-overlay p {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100% !important;
+    margin: 10px !important;
+    height: 360px !important;
+  }
+  /* #projects-container .card-overlay {
+    z-index: 1;
+  } */
+}
+
+
+
+@media (max-width:768px){
+  .card {
+    width: 100% !important;
+    margin: 10px !important;
+    height: 190px !important
+  }
+}
+
+
+
+@media (min-width: 769px) {
+  #projects-container .card a {
+    pointer-events: none;
+  }
+}

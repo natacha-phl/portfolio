@@ -1,50 +1,113 @@
+import { useContext } from "react";
+import { NavContext } from "../context/NavContext";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "./Languages.css";
 
-
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import html5 from "../assets/images/html5.png";
+import css3 from "../assets/images/css3.png";
 import bootstrap from "../assets/images/bootstrap.png";
-import css from "../assets/images/css3.png";
-import html from "../assets/images/html5.png";
 import javascript from "../assets/images/javascript.png";
 import symfony from "../assets/images/symfonybon.png";
+import mysql from "../assets/images/mysql.png";
+import php from "../assets/images/phpbon.jpg";
+import photoshop from "../assets/images/photoshop.png";
+import powerPlatform from "../assets/images/Microsoft-Power-Platform.jpg";
+import googleAnalytics from "../assets/images/googleanalyticsbon.png";
+import googleSearchConsole from "../assets/images/googlesearchconsole.png";
 
 export const Languages = () => {
-  const languagesImages = [html, css, bootstrap, javascript, symfony];
+  const { languagesRef } = useContext(NavContext);
 
   return (
-    <div>
-      <Swiper
-        spaceBetween={3}
-        centeredSlides={false}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }} // Permet la navigation par points (pagination)
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        breakpoints={{
-          640: {
-            slidesPerView: 1, // Affiche une seule image sur petits écrans
-          },
-          768: {
-            slidesPerView: 2, // Affiche deux images sur tablettes
-          },
-          1024: {
-            slidesPerView: 3, // Affiche trois images sur grands écrans
-          },
-        }}
-      >
-        {languagesImages.map((image, index) => (
-          <SwiperSlide key={index}>
-            <img src={image} alt="" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <>
+    <div id="languages"  ref={languagesRef}>
+    <h3>Langages</h3>
+
+      <hr />
+      <div className="laguages-container">
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={html5} alt="Logo HTML 5" />
+          </div>
+          <p>HTML</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={css3} alt="Logo CSS 3" />
+          </div>
+          <p>CSS</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={bootstrap} alt="Logo Bootstrap" />
+          </div>
+          <p>Bootstrap</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={javascript} alt="Logo JavaScript" />
+          </div>
+          <p>JavaScript</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={php} alt="Logo PHP" />
+          </div>
+          <p>PHP</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={symfony} alt="Logo Symfony" />
+          </div>
+          <p>Symfony</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={mysql} alt="Logo MySQL" />
+          </div>
+          <p>MySQL</p>
+        </div>
+
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={photoshop} alt="Logo Photoshop" />
+          </div>
+          <p>Photoshop</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="laguages-container">
+        <div className="language-content-medium">
+          <div className="language-image-container">
+            <img src={googleAnalytics} alt="Logo Google Analytics" />
+          </div>
+          <p>Google Analytics</p>
+        </div>
+        <div className="language-content-medium">
+          <div className="language-image-container">
+            <img src={googleSearchConsole} alt="Logo Google Search Console" />
+          </div>
+          <p>Google Search Console</p>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div className="laguages-container">
+        <div className="language-content-big">
+          <div className="language-image-container">
+            <img src={powerPlatform} alt="Logo Microsoft Power Platform" />
+          </div>
+          <p>Microsoft Power Platform</p>
+        </div>
+      </div>
+      <hr/>
     </div>
+    <hr/>
+    </>
   );
 };

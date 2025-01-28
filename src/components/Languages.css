@@ -1,0 +1,131 @@
+#languages {
+  height: 100vh;
+  width: 90%;
+  /* margin: 0 auto; */
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#languages hr {
+  width: 95%;
+  border: none;
+  height: 0.1px;
+  background-color: rgb(125, 185, 246);
+  transform: scaleY(0.2);
+  opacity: 0.7;
+}
+.laguages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
+}
+
+.language-content {
+  width: 12%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 0px 40px;
+}
+
+.language-content:hover {
+  transform: scale(1.05); /* Augmente légèrement la taille */
+}
+
+.language-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.laguages-container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(237, 242, 247);
+}
+
+.language-content-big {
+  width: 100%;
+  text-align: center;
+}
+
+.language-content-medium {
+  width: 30%;
+  text-align: center;
+}
+
+.language-image-container {
+  height: 50px;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.language-image-container img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+}
+
+/* #languagues-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+#languagues-content p {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white; 
+  z-index: 1;
+  overflow: hidden;
+  border:  #4b0082 4px solid
+}
+
+#languagues-content p::before {
+  content: "";
+  position: absolute;
+  top: -10px; 
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #8a2be2, #4b0082); 
+  z-index: -1;
+}
+
+ */
+
+@media (max-width: 768px) {
+  #languages {
+    margin: 0 auto;
+    height: auto !important;
+  }
+
+  .laguages-container {
+    margin: 0px;
+  }
+
+  .language-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .language-content-medium {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

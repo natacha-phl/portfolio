@@ -1,7 +1,20 @@
-nav ul {
-    text-align: center;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  align-items: center;
 }
 
+nav {
+  margin-top: 20px;
+  /* position: fixed; */
+}
+
+nav ul {
+  text-align: center;
+}
 
 nav li {
   list-style: none;
@@ -10,6 +23,58 @@ nav li {
 }
 
 nav li button {
-    all: unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(237, 242, 247);
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul li button.active {
+  color: #425bb5 !important;
+}
+
+#language-container {
+  margin-left: 200px;
+}
+
+#language-container button {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  header {
+    top: 140px;
+    /* justify-content: center; */
+    position: absolute;
+    align-items: start;
+  }
+  nav {
+    display: none;
+  }
+
+  #nav-mobile {
+    margin-left: -25px;
+  }
+
+  #nav-mobile-tooggle {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-burger {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 860px) {
+  #language-container {
+    margin-left: 70px;
+  }
 }

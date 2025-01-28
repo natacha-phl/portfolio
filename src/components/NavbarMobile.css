@@ -1,0 +1,50 @@
+#nav-mobile {
+  margin-top: 20px;
+  height: 100vh;
+  width: 100%;
+  /* position: fixed; */
+}
+
+#nav-mobile li {
+  list-style: none;
+
+  /* margin: 10px; */
+}
+
+#nav-mobile li button {
+  all: unset;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(237, 242, 247);
+  font-size: 11px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+@media (min-width: 769px) {
+  #nav-mobile {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        margin-top: -130px;
+
+    }
+
+    #language-container{
+        margin-left: 0px !important;
+    }
+
+    #nav-mobile {
+        height: auto;
+    }
+
+
+
+}
