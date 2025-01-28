@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
-import myPicture from "../assets/images/natachapamphil.JPG";
+import myPicture from "../assets/images/natachapamphil.jpg";
 import "./AboutMe.css";
 import { LangContext } from "../context/LangContext";
 import frenchTranslation from "./translations/french.json";
