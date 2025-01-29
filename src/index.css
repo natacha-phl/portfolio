@@ -1,46 +1,27 @@
-
-
-
-
-
-
 /* --- MODE LIGHT ---*/
 
-
 body.light {
-  background-color: #fff
-
+  background-color: #fff;
 }
-
-
-
-
 
 body.light h1,
 body.light nav li button,
-body.light h3, 
+body.light #nav-mobile li button,
+body.light h3,
 body.light h4,
 body.light #aboutme-content p,
 body.light .laguages-container p,
 body.light .timeline-event-copy p:not(:first-of-type),
-body.light .form-label{
-  color: black
-
+body.light .form-label,
+body.light #nav-mobile-tooggle svg {
+  color: black;
 }
-
-
-
 
 body.light hr {
   background-color: rgb(160, 170, 180);
-
 }
 
-
-
 /* DARK MODE DEFAULT */
-
-
 
 body {
   background-color: rgb(15, 17, 19);
@@ -49,10 +30,10 @@ body {
 hr {
   width: 100%;
   /* border: none; */
-  height: 0.1px; 
-  background-color: rgb(237, 242, 247); 
+  height: 0.1px;
+  background-color: rgb(237, 242, 247);
   transform: scaleY(0.2);
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 
 h3 {

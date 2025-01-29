@@ -3,6 +3,7 @@ import { NavContext } from "../context/NavContext";
 import { LangContext } from "../context/LangContext";
 import { NavbarMobile } from "./NavbarMobile";
 
+
 import "./Navbar.css";
 import frenchTranslation from "./translations/french.json";
 import englishTranslation from "./translations/english.json";
@@ -93,7 +94,7 @@ export const Navbar = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-  // ------ LANGUAGES BUTTON ----
+  // ------ LANGUAGES  ----
 
   const { lang, setLang } = useContext(LangContext);
   const [buttonText, setButtonText] = useState("EN");
@@ -122,7 +123,7 @@ export const Navbar = () => {
                 className={activeSection === "home-active" ? "active" : ""}
                 onClick={() => scrollToSection(homeRef)}
               >
-                Accueil
+                {lang === "fr" ? "Accueil" : "Home"}
               </button>
             </li>
             <li>
@@ -130,7 +131,7 @@ export const Navbar = () => {
                 className={activeSection === "aboutme-active" ? "active" : ""}
                 onClick={() => scrollToSection(aboutMeRef)}
               >
-                Qui-suis-je ?
+                {lang === "fr" ? "Qui suis-je ?" : "About me"}
               </button>
             </li>
             <li>
@@ -138,7 +139,7 @@ export const Navbar = () => {
                 className={activeSection === "languages-active" ? "active" : ""}
                 onClick={() => scrollToSection(languagesRef)}
               >
-                Langages
+                {lang === "fr" ? "Langages" : "Languages"}
               </button>
             </li>
             <li>
@@ -148,7 +149,7 @@ export const Navbar = () => {
                 }
                 onClick={() => scrollToSection(experienceRef)}
               >
-                Parcours
+                {lang === "fr" ? "Parcours" : "Background"}
               </button>
             </li>
             <li>
@@ -156,7 +157,7 @@ export const Navbar = () => {
                 className={activeSection === "projects-active" ? "active" : ""}
                 onClick={() => scrollToSection(projectsRef)}
               >
-                Projets
+                {lang === "fr" ? "Projets" : "Projects"}
               </button>
             </li>
             <li>

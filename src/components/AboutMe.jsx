@@ -16,7 +16,7 @@ export const AboutMe = () => {
   return (
     <>
       <section id="aboutme-container" ref={aboutMeRef}>
-        <h3>Qui suis-je ?</h3>
+        <h3>{lang === "fr" ? "Qui suis-je ?" : "About me"}</h3>
         {/* <hr /> */}
 
         <div id="aboutme-content">

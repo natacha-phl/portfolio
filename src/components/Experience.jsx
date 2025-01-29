@@ -5,6 +5,7 @@ import { LangContext } from "../context/LangContext";
 import frenchTranslation from "./translations/french.json";
 import englishTranslation from "./translations/english.json";
 
+
 export const Experience = () => {
   const { experienceRef } = useContext(NavContext);
 
@@ -14,7 +15,7 @@ export const Experience = () => {
 
   return (
     <div ref={experienceRef} className="section" id="experience">
-      <h3>Parcours</h3>
+      <h3>{lang === "fr" ? "Parcours" : "Background"}</h3>
       {/* <hr/> */}
       <div className="experience-container container">
         <div className="col-md-10 mx-auto">
@@ -22,8 +23,8 @@ export const Experience = () => {
             <li className="timeline-event" data-aos="fade-up">
               <label className="timeline-event-icon"></label>
               <div className="timeline-event-copy">
-                <p className="timeline-event-thumbnail">Octobre 2024</p>
-                <h4>{texts.diploma2}</h4>
+                <p className="timeline-event-thumbnail">2024</p>
+                <h4>{texts.diploma1}</h4>
                 <h5>Greta</h5>
               </div>
             </li>

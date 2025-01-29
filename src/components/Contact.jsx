@@ -1,25 +1,30 @@
 import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
+import { LangContext } from "../context/LangContext";
+
 import  "./Contact.css";
 
 
 export const Contact = () => {
   const { contactRef } = useContext(NavContext);
+  const { lang } = useContext(LangContext);
+  
+  
 
   return (
     <div ref={contactRef} class="section" id="contact">
-      <h3>Contactez-moi</h3>
+      <h3>Contact</h3>
       {/* <hr/> */}
       <div class="container">
         <div class="col-md-7 text-center mx-auto" data-aos="fade-up">
           <form action="https://formspree.io/f/xqazkbnw" method="POST">
             <div class="mb-3">
-              <label class="form-label">Votre email :</label>
+              <label class="form-label">{lang === "fr" ? "Votre email" : "Your e-mail address"}</label>
               <input class="form-control" type="email" name="email" required />
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Votre message :</label>
+              <label class="form-label">{lang === "fr" ? "Votre message" : "Your message"}</label>
               <textarea
                 class="form-control"
                 name="message"
@@ -29,7 +34,7 @@ export const Contact = () => {
             </div>
 
             <button class="btn btn-primary mt-3 mb-5" type="submit">
-              Envoyer
+            {lang === "fr" ? "Envoyer" : "Send"}
             </button>
           </form>
           <h4>Linkedin</h4>

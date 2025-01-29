@@ -1,15 +1,19 @@
 import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
 import "./Projects.css";
+import { LangContext } from "../context/LangContext";
+
 
 import projectsData from "../data/projects.json";
 
 export const Projects = () => {
   const { projectsRef } = useContext(NavContext);
+  const { lang } = useContext(LangContext);
+
   return (
     <>
       <hr />
-      <h3>Projets</h3>
+      <h3>{lang === "fr" ? "Projets" : "Projects"}</h3>
       <div ref={projectsRef} id="projects-container">
         {/* <hr /> */}
         {projectsData.map((project, key) => (

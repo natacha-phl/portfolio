@@ -16,14 +16,19 @@ import photoshop from "../assets/images/photoshop.png";
 import powerPlatform from "../assets/images/Microsoft-Power-Platform.jpg";
 import googleAnalytics from "../assets/images/googleanalyticsbon.png";
 import googleSearchConsole from "../assets/images/googlesearchconsole.png";
+import { LangContext } from "../context/LangContext";
+
 
 export const Languages = () => {
   const { languagesRef } = useContext(NavContext);
 
+  const { lang } = useContext(LangContext);
+
+
   return (
     <>
     <div id="languages"  ref={languagesRef}>
-    <h3>Langages</h3>
+    <h3>{lang === "fr" ? "Langages" : "Languages"}</h3>
 
       <hr />
       <div className="laguages-container">
