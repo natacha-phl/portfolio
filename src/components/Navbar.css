@@ -1,5 +1,5 @@
 header {
-  width: 96%;
+  width: 95%;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -51,6 +51,13 @@ nav ul li button.active {
   width: 37.27px;
   height: 30px;
   margin-left: 3px;
+}
+
+
+#theme-container button svg {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 @media (max-width: 768px) {
