@@ -47,7 +47,7 @@ nav ul li button.active {
   font-weight: bold;
 }
 
-#theme-container button {
+#theme-container {
   width: 37.27px;
   height: 30px;
   margin-left: 3px;
