@@ -42,7 +42,7 @@
 h1 {
   all: unset;
   font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 45px;
   /* margin-left: 110px; */
   justify-content: center;
@@ -53,7 +53,7 @@ h1 {
   font-family: "Lato", sans-serif;
   color: #425bb5;
   margin-left: 35px;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700px;
   /* margin-left: 110px; */
 }

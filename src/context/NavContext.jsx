@@ -12,9 +12,12 @@ export const NavProvider = ({children}) => {
 
 
       return (
+
         <NavContext.Provider value={{aboutMeRef, languagesRef, experienceRef, projectsRef, contactRef, homeRef}}>
             {children}
         </NavContext.Provider>
+  
+
       )
 
 

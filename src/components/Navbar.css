@@ -45,12 +45,22 @@ nav ul li button.active {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: bold;
+  border-radius: 50px;
+  border: #425bb5 solid;
+  color:#425bb5;
+
 }
 
 #theme-container {
   width: 37.27px;
   height: 30px;
   margin-left: 3px;
+  
+}
+
+#theme-container button {
+  border-radius: 50px;
+  border: #425bb5 solid;
 }
 
 
@@ -58,6 +68,7 @@ nav ul li button.active {
   display: flex; 
   align-items: center; 
   justify-content: center; 
+  color:#425bb5;
 }
 
 @media (max-width: 768px) {
