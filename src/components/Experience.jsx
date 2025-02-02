@@ -20,6 +20,16 @@ export const Experience = () => {
       <div className="experience-container container">
         <div className="col-md-10 mx-auto">
           <ul className="timeline">
+
+          <li className="timeline-event" data-aos="fade-up">
+              <label className="timeline-event-icon"></label>
+              <div className="timeline-event-copy">
+                <p className="timeline-event-thumbnail">2024</p>
+                <h4>{texts.experience22}</h4>
+                <h5>{texts.company22}</h5>
+              </div>
+            </li>
+
             <li className="timeline-event" data-aos="fade-up">
               <label className="timeline-event-icon"></label>
               <div className="timeline-event-copy">
@@ -36,6 +46,16 @@ export const Experience = () => {
                 <h5>M2I Academy</h5>
               </div>
             </li>
+
+            <li className="timeline-event" data-aos="fade-up">
+              <label className="timeline-event-icon"></label>
+              <div className="timeline-event-copy">
+                <p className="timeline-event-thumbnail">2023 - 2024</p>
+                <h4>{texts.experience11}</h4>
+                <h5>{texts.company11}</h5>
+              </div>
+            </li>
+
 
             <li className="timeline-event" data-aos="fade-up">
               <label className="timeline-event-icon"></label>
