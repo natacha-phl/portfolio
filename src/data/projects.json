@@ -1,7 +1,7 @@
 [
 
   {
-    "title": "Expenses Tracking Interface",
+    "title": "Expenses Tracking Front Interface",
     "technologies": "React.js",
     "links": {
       "liveDemo": "https://github.com/natacha-phl/21knowledge-accountant-app",
@@ -13,7 +13,7 @@
         "title": "MyVipSpa",
         "technologies": "Symfony",
         "links": {
-          "liveDemo": "https://monportfolio.com",
+          "liveDemo": "https://myvipspa-ed702e79d227.herokuapp.com/",
           "repository": "",
           "image": "/assets/images/myvipspa.png"
         }
@@ -23,7 +23,7 @@
         "title": "Andhrome - E-commerce",
         "technologies": "Symfony",
         "links": {
-          "liveDemo": "https://monportfolio.com",
+          "liveDemo": "https://andrhome.herokuapp.com/",
           "repository": "",
           "image": "/assets/images/andrhome.jpg"
         }
