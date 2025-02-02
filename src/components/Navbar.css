@@ -77,6 +77,7 @@ nav ul li button.active {
     /* justify-content: center; */
     position: absolute;
     align-items: start;
+    max-width: 95%;
   }
   nav {
     display: none;
