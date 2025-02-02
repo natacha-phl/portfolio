@@ -90,6 +90,10 @@ nav ul li button.active {
   #nav-mobile-tooggle {
     width: 80%;
   }
+
+  #theme-container {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 769px) {
