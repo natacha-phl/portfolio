@@ -104,7 +104,7 @@ export const Navbar = () => {
     <header>
       <div id="nav-mobile-tooggle">
         <MenuIcon
-          sx={{ color: "white", fontSize: "2rem" }}
+          sx={{ color: "#425bb5", fontSize: "2rem" }}
           className="menu-burger"
           onClick={() => {
             if (showNavMobile === false) {

@@ -47,7 +47,8 @@ export const ScrollUpProvider = ({ children }) => {
     }
   return (
     <>
-      {showScrollIcon &&<ArrowCircleUpIcon id="scroll-up-button" onClick={()=>scrollUp()} />}
+      {/* {showScrollIcon &&<ArrowCircleUpIcon id="scroll-up-button" onClick={()=>scrollUp()} />} */}
+      {showScrollIcon &&<button id="scroll-up-button" onClick={()=>scrollUp()}>&uarr;</button>}
       <ScrollUpContext.Provider>{children}</ScrollUpContext.Provider>
     </>
   );

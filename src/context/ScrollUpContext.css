@@ -5,12 +5,15 @@
   margin: 10px;
   font-size:xx-large;
   color: #425bb5;
+  border: #425bb5 solid 1px;
+  width: 3%;
 }
 
 
 @media (max-width :768px ){
     #scroll-up-button {
         font-size: x-large;
+        width: 6%;
     }
 
 }

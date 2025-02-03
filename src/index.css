@@ -14,8 +14,7 @@ body.light h4,
 body.light #aboutme-content p,
 body.light .laguages-container p,
 body.light .timeline-event-copy p:not(:first-of-type),
-body.light .form-label,
-body.light #nav-mobile-tooggle svg {
+body.light .form-label{
   color: black;
 }
 

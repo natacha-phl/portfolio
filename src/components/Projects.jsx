@@ -1,7 +1,8 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NavContext } from "../context/NavContext";
 import "./Projects.css";
 import { LangContext } from "../context/LangContext";
+import { ModalProject } from "./ModalProject.Jsx";
 
 
 import projectsData from "../data/projects.json";
@@ -9,6 +10,9 @@ import projectsData from "../data/projects.json";
 export const Projects = () => {
   const { projectsRef } = useContext(NavContext);
   const { lang } = useContext(LangContext);
+  const [showModalProject, setShowModalProject] = useState(false);
+  const [imageToModal, setImageToModal] = useState(null);
+  const [titleToModal, setTitleToModal] =useState(null)
 
   return (
     <>
@@ -25,25 +29,34 @@ export const Projects = () => {
                 <button
                   onClick={(e) => {
                     e.preventDefault();
+                    if (project.links.liveDemo.length === 0 ){
+                      setShowModalProject(true);
+                      setImageToModal(project.links.image)
+                      setTitleToModal(project.title)
+
+                    } else {
                     window.open(
                       project.links.liveDemo,
                       "_blank",
                       "noopener,noreferrer"
                     );
-                  }}
+                  }}}
                   className="btn btn-primary"
                 >
                   VOIR
                 </button>
               </div>
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src={project.links.image}
                 alt="Card image cap"
               />
             </a>{" "}
           </div>
         ))}
+
+       {showModalProject && <ModalProject imageToModal={imageToModal} titleToModal={titleToModal} setShowModalProject={setShowModalProject}/>}
+
       </div>
       <hr />
     </>

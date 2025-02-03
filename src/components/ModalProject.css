@@ -1,0 +1,7 @@
+.modal-dialog {
+    overflow-x: hidden;
+}
+
+.modal-dialog img {
+    object-fit: contain;
+}
