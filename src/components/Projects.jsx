@@ -22,7 +22,7 @@ export const Projects = () => {
         {/* <hr /> */}
         {projectsData.map((project, key) => (
           <div className="card" key={key}>
-            <a href={project.links.liveDemo}>
+            <a style={{pointerEvent:'none'}}>
               <div className="card-overlay">
                 <h5>{project.title}</h5>
                 <p>{project.technologies}</p>
