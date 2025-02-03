@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { NavContext } from "../context/NavContext";
 import "./Projects.css";
 import { LangContext } from "../context/LangContext";
-import { ModalProject } from "./ModalProject.Jsx";
+import { ModalProject } from "./ModalProject.jsx";
 
 
 import projectsData from "../data/projects.json";
