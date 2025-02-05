@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
 import "./Experience.css";
 import { LangContext } from "../context/LangContext";
-import frenchTranslation from "./translations/french.json";
-import englishTranslation from "./translations/english.json";
+import frenchTranslation from "../data/french.json";
+import englishTranslation from "../data/english.json";
 
 
 export const Experience = () => {
@@ -81,7 +81,6 @@ export const Experience = () => {
                 <p className="timeline-event-thumbnail">2020</p>
                 <h4>{texts.diploma3}</h4>
                 <h5>WEBFORCE3 Paris 4</h5>
-                <p>Formation "Développeur Web et Web mobile" de 490h</p>
               </div>
             </li>
 

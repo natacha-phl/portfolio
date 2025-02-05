@@ -43,7 +43,7 @@ export const Projects = () => {
                   }}}
                   className="btn btn-primary"
                 >
-                  VOIR
+                  {lang === "fr" ? "VOIR" : "VIEW"}
                 </button>
               </div>
               <img

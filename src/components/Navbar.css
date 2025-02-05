@@ -88,11 +88,17 @@ nav ul li button.active {
   }
 
   #nav-mobile-tooggle {
-    width: 80%;
+    width: 100%;
   }
 
+  #nav-mobile-tooggle svg {
+    border: #425bb5 solid
+  }
+
+
+
   #theme-container {
-    margin-right: 15px;
+    margin-right: 19px;
   }
 }
 

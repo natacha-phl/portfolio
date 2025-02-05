@@ -8,6 +8,7 @@
   border: #425bb5 solid 1px;
   width: 3%;
   text-align: center;
+  z-index: 1;
 }
 
 

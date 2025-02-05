@@ -22,8 +22,8 @@ import html from "../assets/images/html5.png";
 import javascript from "../assets/images/javascript.png";
 import symfony from "../assets/images/symfonybon.png";
 
-import frenchTranslation from "./translations/french.json";
-import englishTranslation from "./translations/english.json";
+import frenchTranslation from "../data/french.json";
+import englishTranslation from "../data/english.json";
 
 export const Home = () => {
   const { homeRef } = useContext(NavContext);

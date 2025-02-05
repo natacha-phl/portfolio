@@ -5,8 +5,8 @@ import { NavbarMobile } from "./NavbarMobile";
 
 
 import "./Navbar.css";
-import frenchTranslation from "./translations/french.json";
-import englishTranslation from "./translations/english.json";
+import frenchTranslation from "../data/french.json";
+import englishTranslation from "../data/english.json";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import LightModeIcon from "@mui/icons-material/LightMode";

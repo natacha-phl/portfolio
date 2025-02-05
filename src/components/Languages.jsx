@@ -16,6 +16,9 @@ import photoshop from "../assets/images/photoshop.png";
 import powerPlatform from "../assets/images/Microsoft-Power-Platform.jpg";
 import googleAnalytics from "../assets/images/googleanalyticsbon.png";
 import googleSearchConsole from "../assets/images/googlesearchconsole.png";
+import figma from "../assets/images/figma.png";
+import react from "../assets/images/react.png";
+import sql from "../assets/images/sql.png";
 import { LangContext } from "../context/LangContext";
 
 
@@ -58,6 +61,12 @@ export const Languages = () => {
         </div>
         <div className="language-content">
           <div className="language-image-container">
+            <img src={react} alt="Logo Bootstrap" />
+          </div>
+          <p>ReactJs</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
             <img src={php} alt="Logo PHP" />
           </div>
           <p>PHP</p>
@@ -67,6 +76,12 @@ export const Languages = () => {
             <img src={symfony} alt="Logo Symfony" />
           </div>
           <p>Symfony</p>
+        </div>
+        <div className="language-content">
+          <div className="language-image-container">
+            <img src={sql} alt="Logo MySQL" />
+          </div>
+          <p>SQL</p>
         </div>
         <div className="language-content">
           <div className="language-image-container">

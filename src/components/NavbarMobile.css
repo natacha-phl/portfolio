@@ -39,7 +39,16 @@
 
     #language-container{
         margin-left: 0px !important;
+        position: fixed;
+      right: 60px;
     }
+
+    #theme-container {
+      margin-left: 0px !important;
+      position: fixed;
+      right: 2px;
+  }
+    
 
     #nav-mobile {
         height: auto;
