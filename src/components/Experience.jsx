@@ -60,7 +60,7 @@ export const Experience = () => {
             <li className="timeline-event" data-aos="fade-up">
               <label className="timeline-event-icon"></label>
               <div className="timeline-event-copy">
-                <p className="timeline-event-thumbnail">2022 - 2024</p>
+                <p className="timeline-event-thumbnail">2023 - 2024</p>
                 <h4>{texts.experience1}</h4>
                 <h5>Prodware - Paris, France</h5>
               </div>

@@ -20,6 +20,7 @@ import figma from "../assets/images/figma.png";
 import react from "../assets/images/react.png";
 import sql from "../assets/images/sql.png";
 import { LangContext } from "../context/LangContext";
+import wordpress from "../assets/images/wordpress.png";
 
 
 export const Languages = () => {
@@ -101,6 +102,12 @@ export const Languages = () => {
       <hr />
 
       <div className="laguages-container">
+      <div className="language-content-medium">
+          <div className="language-image-container">
+            <img src={wordpress} alt="Logo Google Analytics" />
+          </div>
+          <p>Wordpress</p>
+        </div>
         <div className="language-content-medium">
           <div className="language-image-container">
             <img src={googleAnalytics} alt="Logo Google Analytics" />
